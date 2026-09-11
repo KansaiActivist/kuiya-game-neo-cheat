@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>クイヤチート</title>
+<style>
+  body{
+    margin:0;
+    width:250px;
+    font-family:-apple-system,"Segoe UI","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+    background:#f7faf9;
+    color:#2b2b2b;
+  }
+  header{
+    background:linear-gradient(180deg,#f6a13f,#ee7d0e);
+    color:#fff;
+    font-weight:700;
+    font-size:14px;
+    padding:10px 14px;
+  }
+  main{ padding:12px 14px 14px; }
+  label.row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:8px 4px;
+    font-size:13px;
+    border-bottom:1px solid #e7e7e7;
+    cursor:pointer;
+  }
+  label.row:last-of-type{ border-bottom:none; }
+  input[type=checkbox]{ width:16px; height:16px; accent-color:#ee7d0e; cursor:pointer; }
+  #status{
+    margin-top:10px;
+    font-size:11px;
+    line-height:1.6;
+    color:#777;
+    min-height:32px;
+  }
+  #status.ok{ color:#1e9e4c; }
+  #status.ng{ color:#c41230; }
+</style>
+</head>
+<body>
+  <header>🐹 クイヤチート</header>
+  <main>
+    <label class="row">
+      <input type="checkbox" id="autoJump">
+      自動ジャンプ
+    </label>
+    <label class="row">
+      <input type="checkbox" id="invincible">
+      無敵(9・壁にぶつかっても死なない)
+    </label>
+    <label class="row">
+      <input type="checkbox" id="noFallDeath">
+      落下復活(穴に落ちても死なない)
+    </label>
+    <label class="row">
+      移動速度
+      <select id="speedMultiplier" style="margin-left:auto;">
+        <option value="0.5">0.5x</option>
+        <option value="1" selected>1x</option>
+        <option value="1.5">1.5x</option>
+        <option value="2">2x</option>
+        <option value="3">3x</option>
+        <option value="5">5x</option>
+      </select>
+    </label>
+    <label class="row">
+      コイン頻度
+      <select id="coinFrequency" style="margin-left:auto;">
+        <option value="0.5">少なめ(0.5x)</option>
+        <option value="1" selected>通常(1x)</option>
+        <option value="2">多め(2x)</option>
+        <option value="4">超多め(4x)</option>
+      </select>
+    </label>
+    <div id="status">クイヤゲームのタブを開いて使ってください。</div>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

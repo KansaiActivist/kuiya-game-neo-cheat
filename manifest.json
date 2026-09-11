@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "クイヤチート",
+  "version": "1.0.0",
+  "description": "クイヤゲーム専用のチート拡張機能(自動ジャンプ / 9のコイン無効化 / 落下復活)",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["file:///*", "http://*/*", "https://*/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "クイヤチート"
+  }
+}
