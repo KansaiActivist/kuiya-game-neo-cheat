@@ -1,5 +1,5 @@
 # kuiya-game-neo-cheat
-クイヤゲーム改(https://kuiyagame-neo.netlify.app/)のチート拡張機能です。
+クイヤゲーム改(https://kuiyagame-neo.netlify.app/ )のチート拡張機能です。
 # 導入
 ## 1.リリースからダウンロード
 releasesからzipファイルダウンロードを行ってください。
