@@ -26,7 +26,6 @@ async function getActiveTab() {
   return tab;
 }
 
-// ページ内で実行される関数(クイヤゲームのフック __KUIYA__ を読み書きする)
 function pageGetCheats() {
   if (!window.__KUIYA__ || !window.__KUIYA__.cheats) return null;
   return window.__KUIYA__.cheats;
@@ -47,7 +46,7 @@ async function readCurrentState() {
       func: pageGetCheats
     });
     if (!result) {
-      setStatus('このタブではクイヤゲームが見つかりません。ゲームのページを開いてから、もう一度開いてください。', 'ng');
+      setStatus('このタブではクイヤゲーム改が見つかりません。ゲームのページを開いてから、もう一度開いてください。', 'ng');
       Object.values(controls).forEach(el => el.disabled = true);
       return;
     }
